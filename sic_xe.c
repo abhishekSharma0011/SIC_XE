@@ -2,6 +2,8 @@
 
 Here we write the functions required for the addressing mode finding program 
 
+Author : Abhishek Kumar Sharma
+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
