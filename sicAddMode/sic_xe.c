@@ -145,7 +145,7 @@ void addMode(int n, int i, int x, int b, int p, int e) {
 
     // indexed with base or pc 
     if(x == 1) {
-        printf(">>> INDEXED + \n");
+        printf(">>> INDEXED + ");
 
         if(b == 1 && p == 0) {
             printf("BASE RELATIVE");
@@ -159,13 +159,13 @@ void addMode(int n, int i, int x, int b, int p, int e) {
     }
     else {
         if(b == 1 && p == 0) {
-            printf("BASE RELATIVE");
+            printf("\n>>> BASE RELATIVE");
         }
         else if(b == 0 && p == 1) {
-            printf("PC RELATIVE");
+            printf("\n>>> PC RELATIVE");
         }
         else if((b == 0 && p == 0) || (b == 1 && p == 1)) {
-            printf("DIRECT");
+            printf("\n>>> DIRECT");
         }
     }
 
@@ -185,6 +185,8 @@ void addMode(int n, int i, int x, int b, int p, int e) {
     if(n == 1 && i == 0) {
         printf("\n>>> INDIRECT");
     }
+
+    printf("\n");
 }
 
 
@@ -240,17 +242,5 @@ void addressingMode(char* binary) {
     // To display the addressing modes based on the nixbpe values
     addMode(instruction.addbits.n, instruction.addbits.i, instruction.addbits.x, 
                     instruction.addbits.b, instruction.addbits.p, instruction.addbits.e);
-
-    /* 
-        FOR DEBUGGING
-    */
-    // printf("The instruction is : %d%d%d%d%d%d%d%d\n", instruction.opCode,
-    //                                                 instruction.addbits.n, 
-    //                                                 instruction.addbits.n, 
-    //                                                 instruction.addbits.n, 
-    //                                                 instruction.addbits.n,
-    //                                                 instruction.addbits.n,
-    //                                                 instruction.addbits.n,
-    //                                                 instruction.addressField);
 
 }   

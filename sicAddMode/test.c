@@ -16,7 +16,6 @@ int main(int argc, char* argv[]) {
 
     hexToBin(hex, binary);
 
-    printf("%s\n", binary);
 
     addressingMode(binary);     // gets the addressing mode
 
