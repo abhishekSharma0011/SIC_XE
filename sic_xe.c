@@ -133,6 +133,8 @@ void hexToBin(char* hexadecimal, char* binaryValue) {
 // To find the addressing mode base on the nixbpe value
 void addMode(int n, int i, int x, int b, int p, int e) {
 
+    printf("~~~~~~~~ ADDRESSING MODES OF GIVEN INSTRUCTION ~~~~~~~~~\n\n");
+
     // only index
     if(e == 0) {
         printf("It's a format 3 instruction...\n");
